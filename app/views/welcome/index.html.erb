@@ -1,0 +1,16 @@
+<table border="1" width="100%">
+  <tr>
+    <td>Patient</td>
+    <% @needs.each do |need| %>
+      <td><%= need.name %></td>
+    <% end %>
+  </tr>
+  <% @patients.each do |patient| %>
+    <tr>
+      <td><%= patient.name %></td>
+      <% @needs.each do |need| %>
+        <td class="patient_need" id="<%= 'pn_' + patient.id.to_s + '_' + need.id.to_s %>"><%= patient.needs.member?(need) ? 'true' : '' %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

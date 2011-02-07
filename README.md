@@ -27,6 +27,8 @@ Patient 4 | true  |       |        |
 </pre>
 
 The click should happen via a JQuery Ajax call, i.e. the page should not reload on a click.
+Functionality is more important than elegance, however, feel free to put comments where
+you would come back and refactor something later.
 
 **After completing the code, commit the changes and send me (Prista1) a pull request.**
 

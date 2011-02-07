@@ -15,7 +15,7 @@ You can also ask for clarifications to the instructions below.
 
 ## Code test details
 
-In this application a patient can have zero or more care needs. Part of the
+In this application a patient can have zero or more needs. Part of the
 application is a screen that lets doctors and nurses indicate which care needs
 a patient has at that time.
 

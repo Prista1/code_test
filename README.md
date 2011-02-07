@@ -1,15 +1,15 @@
-*Instructions for setting up the code test*
+## Instructions for setting up the code test
 
-# Fork this repository.
-# Clone the repository locally.
-# bundle install
-# Create the database
-# Run migrations
-# Load seed data (rake db:seed)
-# Verify that the app runs and you can get to the index page.
+1. Fork this repository.
+2. Clone the repository locally.
+3. bundle install
+4. Create the database
+5. Run migrations
+6. Load seed data (rake db:seed)
+7. Verify that the app runs and you can get to the index page.
 
 
-*Code test details*
+## Code test details
 
 There are two models: patients and needs, with a habtm relation between them.
 The goal of the test is to display a grid showing patients in the left column
@@ -28,11 +28,14 @@ Patient 4 | true  |       |        |
 
 The click should happen via a JQuery Ajax call, i.e. the page should not reload on a click.
 
-*After completing the code, commit the changes and send me (Prista1) a pull request.*
+**After completing the code, commit the changes and send me (Prista1) a pull request.**
 
 
-*If time allows*
-# Use CSS to style the grid to make it look good.
-# Use HTML5/Canvas to display the need names slanted as in this image:
+## If time allows
 
-!https://github.com/Prista1/code_test/raw/master/public/images/needs.png(Slanted)!
+1. Use CSS to style the grid to make it look good.
+2. Use HTML5/Canvas to display the need names slanted as in this image:
+
+
+![Slanted](https://github.com/Prista1/code_test/raw/master/public/images/needs.png)
+

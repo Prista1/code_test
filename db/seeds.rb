@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Patient.create(:name => 'Bob')
+Patient.create(:name => 'Carol')
+Patient.create(:name => 'Ted')
+Patient.create(:name => 'Alice')
+
+Need.create(:name => 'Aspirin')
+Need.create(:name => 'Acetaminophen')
+Need.create(:name => 'Ibuprofen')
+Need.create(:name => 'Codeine')
+Need.create(:name => 'Morphine')

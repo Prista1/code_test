@@ -1,4 +1,7 @@
 CodeTest::Application.routes.draw do
+
+  post 'set_patient_need/:patient_id/:need_id' => "welcome#set_care_need"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +51,7 @@ CodeTest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 

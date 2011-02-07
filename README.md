@@ -34,7 +34,8 @@ The click should happen via a JQuery Ajax call, i.e. the page should not reload 
 ## If time allows
 
 1. Use CSS to style the grid to make it look good.
-2. Use HTML5/Canvas to display the need names slanted as in this image:
+2. Use HTML5 and CSS to display the need names slanted as in this image below.
+3. Make #2 work on IE (7 or 8)
 
 
 ![Slanted](https://github.com/Prista1/code_test/raw/master/public/images/needs.png)

@@ -1,1 +1,18 @@
-Placeholder for patient/needs grid
+<h1>Patient Grid</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<% @needs.each do |f| %>
+			<th><%= f.name %></th>
+		<% end %>
+	</tr>
+	<% @patients.each do |f| %>
+	<tr>
+		<td><%= f.name %></td>
+		<% @needs.each do |f| %>
+			<td>Yes/No</td>
+		<% end %>
+	</tr>
+	<% end %>
+</table>

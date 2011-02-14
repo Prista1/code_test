@@ -2,16 +2,20 @@
 
 <table>
 	<tr>
-		<th></th>
-		<% @needs.each do |f| %>
-			<th><%= f.name %></th>
-		<% end %>
-	</tr>
-	<% @patients.each do |f| %>
+		<td></td>
+    	<% @needs.each do |f| %>
+      	<td><%= f.name %></td>
+    	<% end %>
+  	</tr>
+	<% @patients.each do |patient| %>
 	<tr>
-		<td><%= f.name %></td>
-		<% @needs.each do |f| %>
-			<td>Yes/No</td>
+		<td>
+			<%= patient.name %>
+		</td>
+		<% @needs.each do |need| %>
+        	<td>
+				<%= patient.needs.member?(need) ? 'true' : '' %>
+			</td>
 		<% end %>
 	</tr>
 	<% end %>

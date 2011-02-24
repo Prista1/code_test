@@ -1,6 +1,7 @@
 CodeTest::Application.routes.draw do
 
   post 'set_patient_need/:patient_id/:need_id' => "welcome#set_care_need"
+  post 'unset_patient_need/:patient_id/:need_id' => "welcome#unset_care_need"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

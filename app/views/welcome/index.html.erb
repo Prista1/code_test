@@ -1,1 +1,31 @@
-Placeholder for patient/needs grid
+<table id="patients_needs">
+  <thead>
+    <tr>
+      <th class="null"></th>
+      <% @needs.each do |n| %>
+      <th class="need <%= cycle('even', 'odd') %>"><%= n.name %></th>
+      <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @patients.each do |p| %>
+    <tr>
+      <td class="patient"><%= p.name %></td>
+      <% @needs.each do |n| %>
+      <td data-need="<%= n.name %>" data-need-id="<%= n.id %>"
+          data-patient="<%= p.name %>" data-patient-id="<%= p.id %>"
+          data-active="<% if p.needs.include?(n) %>True<% else %>False<% end %>"
+          class="clickable <% if p.needs.include?(n) %>happy<% end %> <%= cycle('even', 'odd', :name => 'zebra') %>"
+          title="<%= p.name %> needs <%= n.name %>">
+        <% if p.needs.include?(n) %>
+        True
+        <% end %>
+      </td>
+      <% end %>
+    </tr>
+  <% reset_cycle('zebra') -%>
+  <% end %>
+  </tbody>
+  
+</table>

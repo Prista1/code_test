@@ -1,0 +1,32 @@
+body {
+  background: #fefef6;
+  color: #222222;
+  font: 16px/20px "Lucida Grande", Arial, sans-serif; }
+
+table {
+  border: 2px solid #cbcbc3;
+  background-color: white;
+  /*margin: 2em auto 0 */
+  position: relative;
+  /*-webkit-box-shadow: 0 4px 2px $ivory - #111 */
+  /*-moz-box-shadow: 0 4px 2px $ivory - #111 */
+  display: block;
+  float: left;
+  border-radius: 4px;
+  -moz-border-radius: 4px; }
+  table th, table td {
+    border: 1px solid #cbcbc3;
+    padding: 0.4em; }
+    table th.odd, table td.odd {
+      background-color: #f7fdff; }
+  table th.null {
+    border: none; }
+  table td {
+    min-width: 40px; }
+    table td.clickable {
+      text-align: right; }
+      table td.clickable.happy {
+        background-color: #cce9a8; }
+      table td.clickable:hover, table td.clickable.happy:hover {
+        background-color: #fefef6;
+        cursor: pointer; }

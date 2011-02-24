@@ -104,12 +104,17 @@ jQuery(function($) {
         .css('-webkit-transform-origin', '100% 100%')
         .css('-moz-transform', 'rotate(70deg)')
         .css('-moz-transform-origin', '100% 100%')
+        .css('-o-transform', 'rotate(70deg)')
+        .css('-o-transform-origin', '100% 100%')
     })
     .css('height', th_height)
     .css('-webkit-transform', 'skewX(20deg)')
     .css('-webkit-transform-origin', '100% 100%')
     .css('-moz-transform', 'skewX(20deg)')
     .css('-moz-transform-origin', '100% 100%')
+    .css('-o-transform', 'skew(20deg, 0deg)')
+    .css('-o-transform-origin', '100% 100%')
+
     // not perfect, but hey
   
 

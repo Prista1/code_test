@@ -1,0 +1,48 @@
+$blue: #F7FDFF
+$green: #CCE9A8
+$yellow: #FEFEF6
+$ivory: $yellow - #333
+
+$text: #222
+$padding: 0.4em
+
+=rounded($n)
+  border-radius: $n
+  -moz-border-radius: $n
+
+body
+  background: $yellow
+  color: $text
+  font: 16px/20px "Lucida Grande", Arial, sans-serif
+
+table
+  border: 2px solid $ivory
+  background-color: white
+  /*margin: 2em auto 0*/
+  position: relative
+  /*-webkit-box-shadow: 0 4px 2px $ivory - #111*/
+  /*-moz-box-shadow: 0 4px 2px $ivory - #111*/
+  display: block
+  float: left
+  +rounded(4px)
+
+  th, td
+    border: 1px solid $ivory
+    padding: $padding
+    &.odd
+      background-color: $blue
+
+  th
+    &.null
+      border: none
+
+  td
+    min-width: 40px
+    &.clickable
+      text-align: right
+      &.happy
+        background-color: $green
+      &:hover, &.happy:hover
+        background-color: $yellow
+        cursor: pointer
+      
